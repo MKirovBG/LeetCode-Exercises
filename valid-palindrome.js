@@ -6,7 +6,7 @@ var validPalindrome = function (input) {
 	for (let i = 0; i <= input.length; i++) {
 		copy.splice(i, 1);
 		reversedStr.splice(i, 1);
-		console.log(copy, reversedStr);
+		// console.log(copy, reversedStr);
 
 		if (copy.join('') == reversedStr.join('')) {
 			result = true;
@@ -17,18 +17,8 @@ var validPalindrome = function (input) {
 	return result;
 };
 
-// validPalindrome('aba');
+validPalindrome('aba');
 validPalindrome('abca');
-// validPalindrome('abc');
+validPalindrome('abc');
 
-/*Given a string s, return true if the s can be palindrome after deleting at most one character from it.*/
-let str = 'hello';
-
-// for (let i = 0; i < str.length; i++) {
-// 	console.log(str);
-// 	str = str.split('');
-// 	str.splice(i, 1);
-// 	str = str.join('');
-// }
-
-// console.log(str);
+// Currently working on solution
